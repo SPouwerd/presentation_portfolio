@@ -1,58 +1,110 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Stijn van der Pouw</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-	</head>
-	<body>
-		<!-- use following link as index so we start in the middle (not the sides) -->
-		<!-- http://localhost:8000/#/1 -->
-		<div class="reveal">
-			<div class="slides">
-					<section class="left-page">
-						About me
-					</section>
-				<section>
-					<section class="index-page">
-						<div class="name">
-							Stijn van der Pouw
-						</div>
-					</section>
-					<section class="portfolio-page">
-						Projects &#8659;
-					</section>
-					<section class="project-page">
-						Project 1
-					</section>
-					<section class="project-page">
-						Project 2
-					</section>
+	<title>Stijn van der Pouw</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+	<!-- use following link as index so we start in the middle (not the sides) -->
+	<!-- http://localhost:8000/#/1 -->
+	<div class="reveal">
+		<div class="slides">
+
+			<section class="left-page">
+				About me
+			</section>
+
+			<section>
+				<section class="index-page">
+					<div class="name">
+						Stijn van der Pouw
+					</div>
 				</section>
-					<section class="right-page">
-						Coffee
-					</section>
-			</div>
-		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				controlsLayout: 'edges',
-				controlsTutorial: false,
-				progress: false,
-				mouseWheel: true,
-				navigationMode: 'grid',
-			});
-		</script>
-	</body>
+				<section class="portfolio-page">
+					<div class="column">
+						Projects &#8659;
+					</div>
+					<ul>
+						<li>QR business card</li>
+						<li>Controllable web tanks </li>
+						<li>A personal trainer's website</li>
+					</ul>
+				</section>
+
+				<section class="project-page">
+					<div class="column">
+						QR business card
+						<p class="project-text">
+							Pretty simple concept, not really pollished but works it does the job. Statisfing to see that there are legitiment business build around this concept.
+							<ul>
+								<li>reads custom (socail) links out a qr-code (url)</li>
+								<li>has a form where you can create your own qr code!</li>
+							</ul>
+						</p>
+					</div>
+					<img src="/src/qr-project.png" class="column" />
+				</section>
+
+				<section class="project-page">
+					<img src="/src/qr-project.png" class="column" />
+					<div class="column">
+						Tanks
+						<p class="project-text"> Insane project never imagened the university would let us build software that let's you control an airpressued loaded tank, with your phone</p>
+						<ul>
+							<li>Raspberry Pi as hardware</li>
+							<li>websocket to send commands</li>
+							<li>live camera feed</li>						
+						</ul>
+					</div>
+				</section>
+
+				<section class="project-page">
+					<div class="column">
+						GetfitByAbs.nl
+						<p class="project-text">
+							One of my first projects that made on to the world wide web. It is a personal trainer's
+							website with some beginner features.
+						<ul>
+							<li>google maps intergration</li>
+							<li>hover and slide effects</li>
+							<li>contact-form to a custom email</li>
+						</ul>
+						</p>
+					</div>
+					<img src="/src/abs-project.png" class="column" />
+				</section>
+			</section>
+
+			<section class="right-page">
+				Coffee?
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script>
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			controlsLayout: 'edges',
+			controlsTutorial: false,
+			progress: false,
+			mouseWheel: true,
+			navigationMode: 'grid',
+		});
+	</script>
+</body>
+
 </html>

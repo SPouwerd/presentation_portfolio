@@ -1,0 +1,26 @@
+ul>li {
+    font-size: large;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.project-text {
+    font-size: x-large;
+    margin: 42px;
+}
+
+.portfolio-page {
+    top: 50px;
+}
+.controls-arrow {
+    color:cadetblue;
+
+}
+
+.reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled,
+.reveal .controls[data-controls-back-arrows=faded] .navigate-up.enabled {
+    opacity: 1 ;
+}
