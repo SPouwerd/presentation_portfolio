@@ -20,62 +20,52 @@
 	<div class="reveal">
 		<div class="slides">
 
-			<section class="left-page">
+			<section class="left-page project-title">
 				About me
 			</section>
 
 			<section>
-				<section class="index-page">
-					<div class="name">
-						Stijn van der Pouw
+				<section class="index-page project-title">
+					Stijn van der Pouw /<br>
 
-						/
-						<br>
-						<span class="txt-type" data-wait="2200"
-                                data-words='["Software consultant", "UX-Designer", "Still a student", "Eager to learn more...", "Photographer"]'></span>
-					</div>
+					<span class="txt-type" data-wait="2200"
+						data-words='["Software consultant", "UX-Designer", "Still a student", "Eager to learn more...", "Photographer"]'></span>
+
 				</section>
 
-				<section class="portfolio-page">
-					<div class="column">
-						Projects &#8659;
+				<section class="project-title">
+					Projects &#8659;
+					<!-- TODO: make dynamic -->
+					<div class="project-list">
+						<a href="#/1/2">
+							QR business card
+						</a>
+						<a href="#/1/3">
+							A personal trainer's website
+						</a>
+						<a href="#/1/4">
+							Controllable web tanks
+						</a>
 					</div>
-					<ul>
-						<li>QR business card</li>
-						<li>Controllable web tanks </li>
-						<li>A personal trainer's website</li>
-					</ul>
 				</section>
 
 				<section class="project-page">
-					<div class="column">
+					<div class="project-title">
 						QR business card
 						<p class="project-text">
-							Pretty simple concept, not really pollished but works it does the job. Statisfing to see that there are legitiment business build around this concept.
-							<ul>
-								<li>reads custom (socail) links out a qr-code (url)</li>
-								<li>has a form where you can create your own qr code!</li>
-							</ul>
+							Pretty simple concept, not really pollished but works it does the job. Statisfing to see
+							that there are legitiment business build around this concept.
+						<ul>
+							<li>reads custom (socail) links out a qr-code (url)</li>
+							<li>has a form where you can create your own qr code!</li>
+						</ul>
 						</p>
 					</div>
 					<img src="/src/images/qr-project.png" class="column" />
 				</section>
 
 				<section class="project-page">
-					<img src="/src/images/qr-project.png" class="column" />
-					<div class="column">
-						Tanks
-						<p class="project-text"> Insane project never imagened the university would let us build software that let's you control an airpressued loaded tank, with your phone</p>
-						<ul>
-							<li>Raspberry Pi as hardware</li>
-							<li>websocket to send commands</li>
-							<li>live camera feed</li>						
-						</ul>
-					</div>
-				</section>
-
-				<section class="project-page">
-					<div class="column">
+					<div class="project-title">
 						GetfitByAbs.nl
 						<p class="project-text">
 							One of my first projects that made on to the world wide web. It is a personal trainer's
@@ -89,13 +79,30 @@
 					</div>
 					<img src="/src/images/abs-project.png" class="column" />
 				</section>
+
+				<section class="project-page">
+					<div class="project-title">
+						Tanks
+						<p class="project-text">
+							Insane project never imagened the university would let us build
+							software that let's you control an airpressued loaded tank, with your phone
+						<ul>
+							<li>Raspberry Pi as hardware</li>
+							<li>websocket to send commands</li>
+							<li>live camera feed</li>
+						</ul>
+						</p>
+					</div>
+					<img src="/src/images/qr-project.png" class="column" />
+				</section>
+
 			</section>
 
-			<section class="right-page">
+			<section class="right-page project-title">
 				Coffee?
-				<div> 
-					<button> Online </button>
-					<button> Offline </button>
+				<div>
+					<button class="coffee-bean"> Online </button>
+					<button class="coffee-bean"> Offline </button>
 				</div>
 			</section>
 
@@ -108,6 +115,7 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
+			history: true,
 			controlsLayout: 'edges',
 			controlsTutorial: false,
 			progress: false,

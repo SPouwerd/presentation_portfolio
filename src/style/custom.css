@@ -1,26 +1,138 @@
-ul>li {
-    font-size: large;
+/* web views */
+
+.project-title {
+    font-size: 3.6rem;
 }
 
-.column {
+.project-list>a {
+    font-size: 1.5rem;
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+section.project-page>.project-title {
     float: left;
     width: 50%;
 }
 
-.project-text {
-    font-size: x-large;
-    margin: 42px;
+p.project-text,
+div.project-title>ul>li {
+    font-size: 1.5rem;
 }
 
-.portfolio-page {
-    top: 50px;
+section.project-page img {
+    width: 50%;
+    height: auto;
 }
+
+button.coffee-bean {
+    color: white;
+    margin-top: 42px;
+    font-size: 1.5rem;
+    padding: 1.5vw;
+    border-radius: 50%;
+    transform: rotate(-42deg);
+    background: rgb(38, 7, 5);
+    background: linear-gradient(362deg, rgba(38, 7, 5, 1) 0%, rgba(60, 12, 9, 1) 65%, rgba(170, 88, 44, 1) 100%);
+    opacity: 0.8;
+    border: none;
+}
+
+button.coffee-bean:hover {
+    cursor: grab;
+    opacity: 1;
+    transform: scale(1.1) rotate(-42deg);
+
+}
+
+@media screen and (max-width: 1550px) {
+    button.coffee-bean {
+        padding: 2.8vw;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    button.coffee-bean {
+        font-size: 1.8rem;
+        padding: 5vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    button.coffee-bean {
+        font-size: 2rem;
+        padding: 9vw;
+    }}
+    
+
+    @media screen and (max-width: 650px) {
+        button.coffee-bean {
+            font-size: 2.2rem;
+            padding: 10vw;
+        }}
+        
+            
+/* tablet views */
+@media screen and (max-width: 750px) {
+
+    .project-list>a {
+        font-size: 2rem;
+    }
+
+    section.project-page>.project-title {
+        float: initial;
+        width: 100%;
+        font-size: 6rem;
+    }
+
+    .project-text,
+    div.project-title>ul>li {
+        font-size: 2.4rem;
+    }
+
+    .reveal.center,
+    .slides section.project-page {
+        inset: auto auto 15% auto;
+    }
+}
+
+/* mobile views */
+@media screen and (max-width: 550px) {
+
+    .project-title {
+        font-size: 8rem;
+    }
+
+    .project-list>a {
+        font-size: 3.5rem;
+    }
+
+    p.project-text,
+    div.project-title>ul>li {
+        font-size: 3.5rem;
+    }
+
+    button.coffee-bean {
+        margin-top: 15vh;
+        font-size: 4rem;
+        padding: 20vw;
+    }
+
+    .reveal.center,
+    .slides section.project-page {
+        inset: auto auto 25% auto;
+    }
+}
+
+
+/* controls */
 .controls-arrow {
-    color:grey;
+    color: grey;
 
 }
 
 .reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled,
 .reveal .controls[data-controls-back-arrows=faded] .navigate-up.enabled {
-    opacity: 1 ;
+    opacity: 1;
 }
